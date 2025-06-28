@@ -42,7 +42,7 @@ async function main() {
   );
 
   if (typeof amount === "bigint") {
-    const rate = 1000000 / Number(amount);   // 1 は number、amount も number に
+    const rate = 1_000_000 / Number(amount);
     console.log("rate: ", rate);
   } else {
     console.error(amount);
